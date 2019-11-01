@@ -1,1 +1,2 @@
-
+K: Millise teenuse või tegevuse jaoks on paigalduslogi ?
+V: Paigalduslogi on 
