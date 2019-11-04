@@ -15,6 +15,7 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 - Lisame kasutaja ja paneme __tomcat__ gruppi: `sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat`
 - Tomcat install on ajutiselt laetud tmp kausta: `wget https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz`
 - Teeme kausta kuhu pakkime lahti Tomcati: `sudo mkdir /opt/tomcat` ja pakkime ahriivi lahti `sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1`
+- Anname __/opt/tomcat recursive__ õigused: `sudo chown -R tomcat: /opt/tomcat` ja käivitame tomcat paigalduse `sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'`
 
 ###### 2. Tomcat lisamine süsteemi ja seadistus
 - 
