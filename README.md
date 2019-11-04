@@ -59,5 +59,6 @@ Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
                clientAuth="false" keyAlias="tomcat" sslProtocol="TLS"/ >
 ```
 
-###### 3. Rakenduse paigaldus (Wordpress)
+###### 3. Rakenduse paigaldus
+- Deplyoin Tomcati enda example WAR - https://tomcat.apache.org/tomcat-9.0-doc/appdev/sample/
 - 
