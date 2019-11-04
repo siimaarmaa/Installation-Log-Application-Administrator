@@ -10,6 +10,5 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 __1. Serveri ettevalmistus__
 - Paigaldame operatsioonisüsteemi poolsed parandused kõige pealt: `sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y`
 - Süsteemi lisatud OpenJDK: `sudo apt install default-jdk`
-
 __2. Tomcat lisamine süsteemi ja seadistus__
 - 
