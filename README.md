@@ -53,7 +53,7 @@ Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
 - Paneme SSL `sudo keytool -genkey -alias tomcat -keyalg RSA -keystore 192.168.1.132.jks`
 - Muudame server.xml `sudo nano /opt/tomcat/conf/server.xml`, et rakendada SSL koos pordiga __9443__ . Lisame reale juurde
  ```
- <Connector port="HTTPS_PORT" maxThreads="150"
+ <Connector port="9443" maxThreads="150"
                scheme="https" secure="true" SSLEnabled="true"
                keystoreFile="/etc/keys/192.168.1.132.jks" keystorePass="kommionu"
                clientAuth="false" keyAlias="tomcat" sslProtocol="TLS"/ >
