@@ -17,6 +17,9 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 - Teeme kausta kuhu pakkime lahti Tomcati: `sudo mkdir /opt/tomcat` ja pakkime ahriivi lahti `sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1`
 - Anname __/opt/tomcat recursive__ õigused: `sudo chown -R tomcat: /opt/tomcat` ja käivitame tomcat paigalduse `sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'`
 
-###### 2. Tomcat lisamine süsteemi ja seadistus
-- Muudame `sudo nano /opt/tomcat/conf/tomcat-users.xml` , et saaksime veebihalduse kaudu hallata rakendusi. [Muudatused seadistuses](conf/tomcat-users.xml)
-- 
+###### 2. Tomcati ettevalmistus
+- Muudame `sudo nano /opt/tomcat/conf/tomcat-users.xml` , et saaksime veebihalduse kaudu hallata rakendusi. [Muudatused seadistuses.](conf/tomcat-users.xml)
+- [Loome serveri konto Tomcat jaoks.](conf/tomcat.service) - `sudo nano /etc/systemd/system/tomcat.service`
+- Lubame Tomcati, Daemon reload: `sudo systemctl daemon-reload` , käivitame tomcati `sudo systemctl start tomcat.service` ja lubame `sudo systemctl enable tomcat.service`
+- Peale lubamist, tuleb kinnitus sõnum, conf loodud __Created symlink /etc/systemd/system/multi-user.target.wants/tomcat.service → /etc/systemd/system/tomcat.service.__
+- Vaatame __systemctl__ üle kas kõik jookseb kenasti `sudo systemctl status tomcat.service`
