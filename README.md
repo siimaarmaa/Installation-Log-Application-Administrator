@@ -8,7 +8,7 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 - [x] __Paigalduse teostas:__ Siim Aarmaa
 
 
-######1. Serveri ettevalmistus
+###### 1. Serveri ettevalmistus
 - Paigaldame operatsioonisüsteemi poolsed parandused kõige pealt: `sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y`
 - Süsteemi lisatud OpenJDK: `sudo apt install default-jdk`
 - Tomcat lisatud serveisse oma grupp: `sudo groupadd tomcat`
@@ -16,5 +16,5 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 - Tomcat install on ajutiselt laetud tmp kausta: `wget https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz`
 - Teeme kausta kuhu pakkime lahti Tomcati: `sudo mkdir /opt/tomcat` ja pakkime ahriivi lahti `sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1`
 
-######2. Tomcat lisamine süsteemi ja seadistus
+###### 2. Tomcat lisamine süsteemi ja seadistus
 - 
