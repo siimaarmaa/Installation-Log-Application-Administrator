@@ -1,5 +1,5 @@
 # Paigalduslogi (rak.admin)
 
 - [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [x] Push my commits to GitHub
+- [x] Open a pull request
