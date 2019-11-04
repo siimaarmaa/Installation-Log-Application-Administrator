@@ -23,3 +23,29 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 - Lubame Tomcati, Daemon reload: `sudo systemctl daemon-reload` , käivitame tomcati `sudo systemctl start tomcat.service` ja lubame `sudo systemctl enable tomcat.service`
 - Peale lubamist, tuleb kinnitus sõnum, conf loodud __Created symlink /etc/systemd/system/multi-user.target.wants/tomcat.service → /etc/systemd/system/tomcat.service.__
 - Vaatame __systemctl__ üle kas kõik jookseb kenasti `sudo systemctl status tomcat.service`
+```
+● tomcat.service - Siim Aarmaa Tomcat
+   Loaded: loaded (/etc/systemd/system/tomcat.service; enabled; vendor preset: ena
+   Active: active (running) since Mon 2019-11-04 16:59:23 UTC; 1min 20s ago
+ Main PID: 20100 (java)
+    Tasks: 48 (limit: 2290)
+   CGroup: /system.slice/tomcat.service
+           └─20100 /usr/lib/jvm/default-java/bin/java -Djava.util.logging.config.f
+
+Nov 04 16:59:23 tomcat systemd[1]: Starting Siim Aarmaa Tomcat...
+Nov 04 16:59:23 tomcat startup.sh[20087]: Tomcat started.
+Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
+lines 1-11/11 (END)...skipping...
+● tomcat.service - Siim Aarmaa Tomcat
+   Loaded: loaded (/etc/systemd/system/tomcat.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2019-11-04 16:59:23 UTC; 1min 20s ago
+ Main PID: 20100 (java)
+    Tasks: 48 (limit: 2290)
+   CGroup: /system.slice/tomcat.service
+           └─20100 /usr/lib/jvm/default-java/bin/java -Djava.util.logging.config.file=/opt/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.security.egd=file:///dev/urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.pr
+
+Nov 04 16:59:23 tomcat systemd[1]: Starting Siim Aarmaa Tomcat...
+Nov 04 16:59:23 tomcat startup.sh[20087]: Tomcat started.
+Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
+```
+- 
