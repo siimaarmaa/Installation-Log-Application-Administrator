@@ -58,4 +58,6 @@ Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
                keystoreFile="/etc/keys/192.168.1.132.jks" keystorePass="kommionu"
                clientAuth="false" keyAlias="tomcat" sslProtocol="TLS"/ >
 ```
--
+
+###### 3. Rakenduse paigaldus (Wordpress)
+- 
