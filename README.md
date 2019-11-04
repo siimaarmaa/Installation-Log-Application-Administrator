@@ -4,7 +4,7 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 
 
 - [x] __Paigaldusega alustatud:__ 18:27, 04.11.2019
-- [x] __Paigaldus lõpetatud:__ n-a
+- [x] __Paigaldus lõpetatud:__ 20:45, 04.11.2019
 - [x] __Paigalduse teostas:__ Siim Aarmaa
 
 
