@@ -8,5 +8,7 @@ Paigalduslogi ülesande täitmiseks on kasutatud Ubuntu 18.04 LTS serverit ja To
 - [x] __Paigalduse teostas:__ Siim Aarmaa
 
 1. Serveri ettevalmistus
+
 1.1 Paigaldame operatsioonisüsteemi poolsed parandused kõige pealt: `sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y`
+
 1.2 Süsteemi lisatud OpenJDK: `sudo apt install default-jdk`
