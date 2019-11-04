@@ -50,4 +50,11 @@ Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
 ```
 - [Näeme, et teenus on püsti.](screenshot/tomcatpüsti.png)
 - Teeme muudatused [`sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml`](conf/opt/tomcat/webapps/manager/META-INF/context.xml) ja [`sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml`](conf/opt/tomcat/webapps/host-manager/META-INF/context.xml) et saaks igast võrgust ligi.
-- 
+- Paneme SSL `sudo keytool -genkey -alias tomcat -keyalg RSA -keystore 192.168.1.132.jks`
+- Muudame server.xml `sudo nano /opt/tomcat/conf/server.xml`, et rakendada SSL koos pordiga __9443__ . Lisame reale juurde
+ ```
+ <Connector port="HTTPS_PORT" maxThreads="150"
+               scheme="https" secure="true" SSLEnabled="true"
+               keystoreFile="/etc/keys/192.168.1.132.jks" keystorePass="RaiveSa$
+               clientAuth="false" keyAlias="tomcat" sslProtocol="TLS"/ >
+```
