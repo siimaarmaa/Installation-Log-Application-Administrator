@@ -61,5 +61,6 @@ Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
 
 ###### 3. Rakenduse paigaldus
 - Deplyoin Tomcati enda example WAR - https://tomcat.apache.org/tomcat-9.0-doc/appdev/sample/
-- 
+- Deplyomiseks kasutatud Tomcat Web Application Manager GUI ja ning Deploy alt kasutatud WAR file to deploy
+- War laetud üles ning Deplyoitud
 - [Rakendus koos serti ja pordiga](screenshot/rakendus.png)
