@@ -48,4 +48,4 @@ Nov 04 16:59:23 tomcat systemd[1]: Starting Siim Aarmaa Tomcat...
 Nov 04 16:59:23 tomcat startup.sh[20087]: Tomcat started.
 Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
 ```
-- 
+- [Näeme, et teenus on püsti.](screenshot/tomcat püsti.png)
