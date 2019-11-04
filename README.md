@@ -55,6 +55,6 @@ Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
  ```
  <Connector port="HTTPS_PORT" maxThreads="150"
                scheme="https" secure="true" SSLEnabled="true"
-               keystoreFile="/etc/keys/192.168.1.132.jks" keystorePass="RaiveSa$
+               keystoreFile="/etc/keys/192.168.1.132.jks" keystorePass="RaiveSaia1993"
                clientAuth="false" keyAlias="tomcat" sslProtocol="TLS"/ >
 ```
