@@ -13,6 +13,7 @@ __1. Serveri ettevalmistus__
 - Süsteemi lisatud OpenJDK: `sudo apt install default-jdk`
 - Tomcat lisatud serveisse oma grupp: `sudo groupadd tomcat`
 - Lisame kasutaja ja paneme __tomcat__ gruppi: `sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat`
+- Tomcat install on ajutiselt laetud tmp kausta: `wget https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz`
 
 __2. Tomcat lisamine süsteemi ja seadistus__
 - 
