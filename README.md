@@ -49,3 +49,4 @@ Nov 04 16:59:23 tomcat startup.sh[20087]: Tomcat started.
 Nov 04 16:59:23 tomcat systemd[1]: Started Siim Aarmaa Tomcat.
 ```
 - [Näeme, et teenus on püsti.](screenshot/tomcat püsti.png)
+- Teeme muudatused `sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml` ja `sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml` et saaks igast võrgust ligi
